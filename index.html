@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Խորոված | Grill.am</title>
+	 <link href="https://grill.am/wp-content/themes/Grill/style.scss" rel="stylesheet/scss" type="text/css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	 <script type="text/template" id="freeze-table-template">
+  <div class="frzTbl antiscroll-wrap frzTbl--scrolled-to-left-edge">
+	<div class="frzTbl-scroll-overlay antiscroll-inner">
+		<div class="frzTbl-scroll-overlay__inner"></div>
+	</div>
+	<div class="frzTbl-content-wrapper">
+
+		<!-- sticky outer heading -->
+		<div class="frzTbl-fixed-heading-wrapper-outer">          
+		  <div class="frzTbl-fixed-heading-wrapper">
+			<div class="frzTbl-fixed-heading-wrapper__inner">
+			  {{heading}}
+			</div>    
+		  </div>
+		</div>
+
+		<!-- column shadows -->
+		<div class="frzTbl-frozen-columns-wrapper">
+		  <!-- left -->
+		  <div class="frzTbl-frozen-columns-wrapper__columns frzTbl-frozen-columns-wrapper__columns--left {{hide-left-column}}"></div>
+		  <!-- right -->            
+		  <div class="frzTbl-frozen-columns-wrapper__columns frzTbl-frozen-columns-wrapper__columns--right {{hide-right-column}}"></div>
+		</div>
+
+		<!-- table -->
+		<div class="frzTbl-table-wrapper">
+		  <div class="frzTbl-table-wrapper__inner">
+			<div class="frzTbl-table-placeholder"></div>
+		  </div>
+		</div>
+
+	</div>
+  </div>
+</script><script type="text/template" id="tmpl-wcpt-product-form-loading-modal">
+  <div class="wcpt-modal wcpt-product-form-loading-modal" data-wcpt-product-id="{{{ data.product_id }}}">
+	<div class="wcpt-modal-content">
+	  <div class="wcpt-close-modal">
+		<!-- close 'x' icon svg -->
+		<span class="wcpt-icon wcpt-icon-x wcpt-close-modal-icon">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+		  </svg>
+		</span>
+	  </div>
+	  <span class="wcpt-product-form-loading-text">
+		<i class="wcpt-ajax-badge">
+		  <!-- ajax loading icon svg -->
+		  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader" color="#384047">
+			<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+		  </svg>
+		</i>
+
+		Loading&hellip;      </span>
+	</div>
+  </div>
+</script>
+<script type="text/template" id="tmpl-wcpt-cart-checkbox-trigger">
+	<div 
+		class="wcpt-cart-checkbox-trigger"
+		data-wcpt-redirect-url=""
+	>
+		<style media="screen">
+	@media(min-width:1200px){
+		.wcpt-cart-checkbox-trigger {
+			display: inline-block;
+					}
+	}
+	@media(max-width:1100px){
+		.wcpt-cart-checkbox-trigger {
+			display: inline-block;
+		}
+	}
+
+	.wcpt-cart-checkbox-trigger {
+		background-color : #4CAF50; border-color : rgba(0, 0, 0, .1); color : rgba(255, 255, 255); 	}
+
+</style>
+		<span class="wcpt-icon wcpt-icon-shopping-bag wcpt-cart-checkbox-trigger__shopping-icon "   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></span>		<span class="wcpt-cart-checkbox-trigger__text">Add selected (<span class="wcpt-total-selected"></span>) to cart</span>
+		<span class="wcpt-cart-checkbox-trigger__close">✕</span>
+	</div>
+</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Խորոված | Grill.am</title>
+	<meta name="description" content="Միայն թարմ մսից և հմուտ խոհարարի կողմից պատրաստված համեղ ուտեստներ..." />
+	<link rel="canonical" href="https://grill.am/product-category/xorovac/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Խորոված | Grill.am" />
+	<meta property="og:description" content="Միայն թարմ մսից և հմուտ խոհարարի կողմից պատրաստված համեղ ուտեստներ..." />
+	<meta property="og:url" content="https://grill.am/product-category/xorovac/" />
+	<meta property="og:site_name" content="Grill.am" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://grill.am/product-category/xorovac/","url":"https://grill.am/product-category/xorovac/","name":"Խորոված | Grill.am","isPartOf":{"@id":"https://grill.am/#website"},"primaryImageOfPage":{"@id":"https://grill.am/product-category/xorovac/#primaryimage"},"image":{"@id":"https://grill.am/product-category/xorovac/#primaryimage"},"thumbnailUrl":"https://grill.am/wp-content/uploads/2024/05/գառան-իքիբիր.webp","description":"Միայն թարմ մսից և հմուտ խոհարարի կողմից պատրաստված համեղ ուտեստներ...","breadcrumb":{"@id":"https://grill.am/product-category/xorovac/#breadcrumb"},"inLanguage":"hy-AM"},{"@type":"ImageObject","inLanguage":"hy-AM","@id":"https://grill.am/product-category/xorovac/#primaryimage","url":"https://grill.am/wp-content/uploads/2024/05/գառան-իքիբիր.webp","contentUrl":"https://grill.am/wp-content/uploads/2024/05/գառան-իքիբիր.webp","width":400,"height":342},{"@type":"BreadcrumbList","@id":"https://grill.am/product-category/xorovac/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://grill.am/"},{"@type":"ListItem","position":2,"name":"Խորոված"}]},{"@type":"WebSite","@id":"https://grill.am/#website","url":"https://grill.am/","name":"Grill.am","description":"Ամենահամեղ սննդի ցանցը Հայաստանում","publisher":{"@id":"https://grill.am/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://grill.am/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"hy-AM"},{"@type":"Organization","@id":"https://grill.am/#organization","name":"Grill.am","url":"https://grill.am/","logo":{"@type":"ImageObject","inLanguage":"hy-AM","@id":"https://grill.am/#/schema/logo/image/","url":"https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-17.png","contentUrl":"https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-17.png","width":104,"height":50,"caption":"Grill.am"},"image":{"@id":"https://grill.am/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//client.crisp.chat' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel="alternate" type="application/rss+xml" title="Grill.am &rarr; Խորոված Category Feed" href="https://grill.am/product-category/xorovac/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/grill.am\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://grill.am/wp-includes/css/dist/block-library/style.min.css?ver=6.8.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel='stylesheet' id='wc-block-vendors-style-css' href='https://grill.am/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=4.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='https://grill.am/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=4.0.0' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='redux-extendify-styles-css' href='https://grill.am/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css?ver=4.4.15' type='text/css' media='all' />
+<link rel='stylesheet' id='wapf-frontend-css-css' href='https://grill.am/wp-content/plugins/advanced-product-fields-for-woocommerce/assets/css/frontend.min.css?ver=1.6.7' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://grill.am/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='antiscroll-css' href='https://grill.am/wp-content/plugins/wc-product-table-lite/assets/antiscroll/css.min.css?ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='freeze_table-css' href='https://grill.am/wp-content/plugins/wc-product-table-lite/assets/freeze_table_v2/css.min.css?ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='photoswipe-css' href='https://grill.am/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='photoswipe-default-skin-css' href='https://grill.am/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='multirange-css' href='https://grill.am/wp-content/plugins/wc-product-table-lite/assets/multirange/css.min.css?ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wcpt-css' href='https://grill.am/wp-content/plugins/wc-product-table-lite/assets/css.min.css?ver=3.5.1' type='text/css' media='all' />
+<style id='wcpt-inline-css' type='text/css'>
+
+	.mejs-button>button {
+	  background: transparent url(https://grill.am/wp-includes/js/mediaelement/mejs-controls.svg) !important;
+	}
+	.mejs-mute>button {
+	  background-position: -60px 0 !important;
+	}    
+	.mejs-unmute>button {
+	  background-position: -40px 0 !important;
+	}    
+	.mejs-pause>button {
+	  background-position: -20px 0 !important;
+	}    
+  
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://grill.am/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://grill.am/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://grill.am/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://grill.am/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.0.0' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://grill.am/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.0.0' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='trp-language-switcher-style-css' href='https://grill.am/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.9.12' type='text/css' media='all' />
+<link rel='stylesheet' id='dgwt-wcas-style-css' href='https://grill.am/wp-content/plugins/ajax-search-for-woocommerce/assets/css/style.min.css?ver=1.28.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://grill.am/wp-content/themes/Grill/style.css?ver=6.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://grill.am/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://grill.am/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.21.8' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://grill.am/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-50-css' href='https://grill.am/wp-content/uploads/elementor/css/post-50.css?ver=1717512139' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://grill.am/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=2.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://grill.am/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.21.8' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://grill.am/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.21.8' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://grill.am/wp-content/uploads/elementor/css/global.css?ver=1717570125' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-117-css' href='https://grill.am/wp-content/uploads/elementor/css/post-117.css?ver=1717572538' type='text/css' media='all' />
+<link rel='stylesheet' id='arca-payments-gateway-css' href='https://grill.am/wp-content/plugins/arca-payment-gateway-pro/css/style.css?ver=2.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v5.15.2/css/all.css' type='text/css' media='all' integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css' type='text/css' media='all' integrity="sha384-1CjXmylX8++C7CVZORGA9EwcbYDfZV2D4Kl1pTm3hp2I/usHDafIrgBJNuRTDQ4f" crossorigin="anonymous" />
+<style id='font-awesome-official-v4shim-inline-css' type='text/css'>
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CArchivo+Narrow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.8.1' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js?ver=3.6.0" id="jquery-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-compatibility.js?ver=2.9.12" id="trp-frontend-compatibility-js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.21.8" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://grill.am/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://grill.am/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.1" />
+<meta name="generator" content="WooCommerce 5.0.0" />
+<meta name="generator" content="Redux 4.4.15" /><!-- start Simple Custom CSS and JS -->
+<!-- Add HTML code to the header or the footer.
+
+For example, you can use the following code for loading the jQuery library from Google CDN:
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+or the following one for loading the Bootstrap library from jsDelivr:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+-- End of the comment --> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2093365885422620"
+	 crossorigin="anonymous"></script>
+
+<!-- end Simple Custom CSS and JS -->
+<link rel="alternate" hreflang="hy" href="https://grill.am/product-category/xorovac/"/>
+<link rel="alternate" hreflang="ru-RU" href="https://grill.am/ru/product-category/xorovac/"/>
+<link rel="alternate" hreflang="en-GB" href="https://grill.am/en/product-category/xorovac/"/>
+<link rel="alternate" hreflang="ru" href="https://grill.am/ru/product-category/xorovac/"/>
+<link rel="alternate" hreflang="en" href="https://grill.am/en/product-category/xorovac/"/>
+		<style>
+			.dgwt-wcas-ico-magnifier,.dgwt-wcas-ico-magnifier-handler{max-width:20px}.dgwt-wcas-search-wrapp{max-width:400px}.dgwt-wcas-search-icon{color:#f9f9f9}.dgwt-wcas-search-icon path{fill:#f9f9f9}		</style>
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.21.8; features: e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<style>.qib-container input[type='number']:not(#qib_id):not(#qib_id){-moz-appearance:textfield;}.qib-container input[type='number']:not(#qib_id):not(#qib_id)::-webkit-outer-spin-button,.qib-container input[type='number']:not(#qib_id):not(#qib_id)::-webkit-inner-spin-button{-webkit-appearance:none;display:none;margin:0;}form.cart button[type='submit']:not(#qib_id):not(#qib_id),.add_to_cart_button:not(#qib_id):not(#qib_id),form.cart .qib-container + div:not(#qib_id):not(#qib_id){display:inline-block;margin:0;padding-top:0;padding-bottom:0;float:none;vertical-align:top;text-align:center;}form.cart button[type='submit']:not(#qib_id):not(#qib_id):not(_),.add_to_cart_button:not(a):not(#qib_id):not(#qib_id){line-height:1;}form.cart button[type='submit']:not(#qib_id):not(#qib_id):not(_):not(_){height:35px;text-align:center;}.add_to_cart_button:not(#qib_id):not(#qib_id):not(_){line-height:35px;margin-top:0;}form.cart .qib-container + button[type='submit']:not(#qib_id):not(#qib_id),form.cart .qib-container + div:not(#qib_id):not(#qib_id):not(_){margin-left:1em;}form.cart button[type='submit']:focus:not(#qib_id):not(#qib_id){outline-width:2px;outline-offset:-2px;outline-style:solid;}.qib-container div.quantity:not(#qib_id):not(#qib_id) {float:left;line-height:1;display:inline-block;margin:0;padding:0;border:none;border-radius:0;width:auto;min-height:initial;min-width:initial;max-height:initial;max-width:initial;}.qib-button:not(#qib_id):not(#qib_id){line-height:1;display:inline-block;margin:0;padding:0;box-sizing:border-box;height:35px;width:30px;color:black;background:#e2e2e2;border-color:#cac9c9;float:left;min-height:initial;min-width:initial;max-height:initial;max-width:initial;vertical-align:middle;font-size:16px;letter-spacing:0;border-style:solid;border-width:1px;transition:none;border-radius:0;}.qib-button:focus:not(#qib_id):not(#qib_id) {border:2px #b3b3aa solid;outline:none;}.qib-button:hover:not(#qib_id):not(#qib_id) {background:#d6d5d5;}.qib-container .quantity input.qty:not(#qib_id):not(#qib_id){line-height:1;background:none;text-align:center;vertical-align:middle;margin:0;padding:0;box-sizing:border-box;height:35px;width:45px;min-height:initial;min-width:initial;max-height:initial;max-width:initial;box-shadow:none;font-size:15px;border-style:solid;border-color:#cac9c9;border-width:1px 0;border-radius:0;}.qib-container .quantity input.qty:focus:not(#qib_id):not(#qib_id) {border-color:#cac9c9;outline:none;border-width:2px 1px;border-style:solid;}.woocommerce table.cart td.product-quantity:not(#qib_id):not(#qib_id){white-space:nowrap;}@media (min-width:768px){.woocommerce table.cart td.product-quantity:not(#qib_id):not(#qib_id){text-align:center;}}@media (min-width:768px){.woocommerce table.cart td.product-quantity .qib-container:not(#qib_id):not(#qib_id){display:flex;justify-content:center;}}.qib-container:not(#qib_id):not(#qib_id) {display:inline-block;}.woocommerce-grouped-product-list-item__quantity:not(#qib_id):not(#qib_id){margin:0;padding-left:0;padding-right:0;text-align:left;}.woocommerce-grouped-product-list-item__quantity .qib-container:not(#qib_id):not(#qib_id){display:flex;}.quantity .minus:not(#qib_id):not(#qib_id),.quantity .plus:not(#qib_id):not(#qib_id),.quantity > a:not(#qib_id):not(#qib_id){display:none;}.products.oceanwp-row .qib-container:not(#qib_id):not(#qib_id){margin-bottom:8px;}</style><link rel="icon" href="https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-18-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-18-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-18-180x180.png" />
+<meta name="msapplication-TileImage" content="https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-18-270x270.png" />
+	 
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0T615D6G5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0T615D6G5');
+</script>
+	 
+	 <meta name="yandex-verification" content="61c81dc5c035f1fd" />
+	 
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(74761507, "init", {
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true,
+		webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/74761507" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2093365885422620"
+	 crossorigin="anonymous"></script>
+	 
+ </head>
+ <body>
+	 
+	<header id="header">
+		<div id="header-top" class="header-top">
+			<div class="container header-top-row">
+				<div class="header-logo"> 
+					<a href="https://grill.am/" title="Grill.am" rel="home">  
+					<img src="https://grill.am/wp-content/uploads/2021/03/cropped-output-onlinepngtools-17.png" alt=""> </a>
+				</div>
+									<div class="header-info">
+						<div class="header-info-icon"><i class="fa fa-map-marker  fa-2x" aria-hidden="true"></i></div>
+						<div class="header-info-values">
+														<div class="header-info-value">ք.Երևան, Խորենացի 88, Բաղրամյան 50/5, Պուշկին 43/3,Անդրանիկի 94/4,Թոթովենց 2/2,Սեբաստիա 16/2 </div>
+														
+						</div>
+					</div>
+													<div class="header-info">
+						<div class="header-info-icon"><i class="fas fa-phone-alt fa-2x"></i></div>
+						<div class="header-info-values">
+															<div class="header-info-value"><a href="tel:+37433600700">+374 33 600 700</a></div>
+															<div class="header-info-value"><a href="tel:+37410600700">+374 10 600 700</a></div>
+													</div>
+					</div>
+								<div class="header-locales ml-auto">
+									 <a href="/my-account" class="account" title="View your shopping cart"> 
+				<i class="far fa-user" aria-hidden="true"></i>
+				   </a>     
+									<div class="trp_language_switcher_shortcode">
+<div class="trp-language-switcher trp-language-switcher-container" data-no-translation >
+	<div class="trp-ls-shortcode-current-language">
+		<a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="Armenian" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/hy.png" width="18" height="12" alt="hy" title="Armenian"> Armenian		</a>
+	</div>
+	<div class="trp-ls-shortcode-language">
+				<a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language"  title="Armenian" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/hy.png" width="18" height="12" alt="hy" title="Armenian"> Armenian		</a>
+					<a href="https://grill.am/ru/product-category/xorovac/" title="Russian">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/ru_RU.png" width="18" height="12" alt="ru_RU" title="Russian"> Russian        </a>
+
+			<a href="https://grill.am/en/product-category/xorovac/" title="English">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_GB.png" width="18" height="12" alt="en_GB" title="English"> English        </a>
+
+		</div>
+	<script type="application/javascript">
+		// need to have the same with set from JS on both divs. Otherwise it can push stuff around in HTML
+		var trp_ls_shortcodes = document.querySelectorAll('.trp_language_switcher_shortcode .trp-language-switcher');
+		if ( trp_ls_shortcodes.length > 0) {
+			// get the last language switcher added
+			var trp_el = trp_ls_shortcodes[trp_ls_shortcodes.length - 1];
+
+			var trp_shortcode_language_item = trp_el.querySelector( '.trp-ls-shortcode-language' )
+			// set width
+			var trp_ls_shortcode_width                                               = trp_shortcode_language_item.offsetWidth + 16;
+			trp_shortcode_language_item.style.width                                  = trp_ls_shortcode_width + 'px';
+			trp_el.querySelector( '.trp-ls-shortcode-current-language' ).style.width = trp_ls_shortcode_width + 'px';
+
+			// We're putting this on display: none after we have its width.
+			trp_shortcode_language_item.style.display = 'none';
+		}
+	</script>
+</div>
+</div>                                      
+														
+									</div>
+			</div>
+		</div>
+		<div class="header-menu">
+			<div id="menu">
+				<div class="container menu-container">
+					<div class="menu-l">
+						<a href="https://grill.am/" title="Grill.am" class="brand-sm" rel="home"> 
+							<img src="https://grill.am/wp-content/themes/Grill/images/logom.png" class="logo-sm" alt="">
+						</a>
+					</div>
+					<div class="menu-c">
+						
+						 
+						<div id="mainmenu" class="menu-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-container"><ul id="menu-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e" class="menu-items"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-24"><a href="https://grill.am/">Գլխավոր</a></li>
+<li id="menu-item-103" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-103"><a href="https://grill.am/shop/">Մենյու</a>
+<ul class="sub-menu">
+	<li id="menu-item-249" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-249"><a href="https://grill.am/product-category/%d5%af%d5%b8%d5%b4%d5%a2%d5%b8-%d5%a1%d5%bc%d5%a1%d5%bb%d5%a1%d6%80%d5%af%d5%b6%d5%a5%d6%80-%d5%a1%d5%af%d6%81%d5%ab%d5%a1%d5%b6%d5%a5%d6%80/">Կոմբո առաջարկներ, ակցիաներ</a></li>
+	<li id="menu-item-250" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-menu-item menu-item-250"><a href="https://grill.am/product-category/xorovac/" aria-current="page">Խորոված</a></li>
+	<li id="menu-item-251" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-251"><a href="https://grill.am/product-category/qabab/">Քաբաբ</a></li>
+	<li id="menu-item-252" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-252"><a href="https://grill.am/product-category/havi_grill/">Հավի գրիլ</a></li>
+	<li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-253"><a href="https://grill.am/product-category/shaurma/">Շաուրմա</a></li>
+	<li id="menu-item-23218" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-23218"><a href="https://grill.am/product-category/%d5%b6%d5%a1%d5%ad%d5%b8%d6%82%d5%bf%d5%a5%d5%bd%d5%bf-%d5%bd%d5%b8%d5%b8%d6%82%d5%bd/">Նախուտեստ, սոուս</a></li>
+	<li id="menu-item-35201" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-35201"><a href="https://grill.am/product-category/%d5%a1%d5%ac%d5%af%d5%b8%d5%b0%d5%b8%d5%ac%d5%a1%d5%b5%d5%ab%d5%b6-%d5%a8%d5%b4%d5%ba%d5%a5%d5%ac%d5%ab%d6%84%d5%b6%d5%a5%d6%80/">Ալկոհոլային ըմպելիքներ</a></li>
+	<li id="menu-item-254" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-254"><a href="https://grill.am/product-category/ympeliqner/">Ըմպելիքներ</a></li>
+	<li id="menu-item-23219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23219"><a href="https://grill.am/%d5%a1%d5%b2%d6%81%d5%a1%d5%b6%d5%a5%d6%80/">Աղցաներ</a></li>
+</ul>
+</li>
+<li id="menu-item-737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-737"><a href="https://grill.am/shop/">Խանութ</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://grill.am/about/">Մեր մասին</a></li>
+<li id="menu-item-11000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11000"><a href="https://grill.am/%d5%a1%d5%b7%d5%ad%d5%a1%d5%bf%d5%a1%d5%b6%d6%84/">Աշխատանք</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://grill.am/contact/">Կապ</a></li>
+<li id="menu-item-40101" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher current-language-menu-item menu-item-40101"><a href="https://grill.am/product-category/xorovac/"><span data-no-translation><img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/hy.png" width="18" height="12" alt="hy" title="Armenian"></span></a></li>
+<li id="menu-item-40099" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-40099"><a href="https://grill.am/en/product-category/xorovac/"><span data-no-translation><img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_GB.png" width="18" height="12" alt="en_GB" title="English"></span></a></li>
+<li id="menu-item-40100" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-40100"><a href="https://grill.am/ru/product-category/xorovac/"><span data-no-translation><img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/ru_RU.png" width="18" height="12" alt="ru_RU" title="Russian"></span></a></li>
+</ul></div>                          
+					 
+					</div>
+					<div class="menu-r">
+						<div class="menu-r-item menu-btn-search position-relative">
+							<div  class="dgwt-wcas-search-wrapp dgwt-wcas-has-submit woocommerce dgwt-wcas-style-pirx-compact dgwt-wcas-style-pirx js-dgwt-wcas-layout-icon dgwt-wcas-layout-icon js-dgwt-wcas-mobile-overlay-enabled">
+			<div  class="dgwt-wcas-search-icon js-dgwt-wcas-search-icon-handler">				<svg class="dgwt-wcas-ico-magnifier-handler" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+					<path  d=" M 16.722523,17.901412 C 16.572585,17.825208 15.36088,16.670476 14.029846,15.33534 L 11.609782,12.907819 11.01926,13.29667 C 8.7613237,14.783493 5.6172703,14.768302 3.332423,13.259528 -0.07366363,11.010358 -1.0146502,6.5989684 1.1898146,3.2148776
+						  1.5505179,2.6611594 2.4056498,1.7447266 2.9644271,1.3130497 3.4423015,0.94387379 4.3921825,0.48568469 5.1732652,0.2475835 5.886299,0.03022609 6.1341883,0 7.2037391,0 8.2732897,0 8.521179,0.03022609 9.234213,0.2475835 c 0.781083,0.23810119 1.730962,0.69629029 2.208837,1.0654662
+						  0.532501,0.4113763 1.39922,1.3400096 1.760153,1.8858877 1.520655,2.2998531 1.599025,5.3023778 0.199549,7.6451086 -0.208076,0.348322 -0.393306,0.668209 -0.411622,0.710863 -0.01831,0.04265 1.065556,1.18264 2.408603,2.533307 1.343046,1.350666 2.486621,2.574792 2.541278,2.720279 0.282475,0.7519
+						  -0.503089,1.456506 -1.218488,1.092917 z M 8.4027892,12.475062 C 9.434946,12.25579 10.131043,11.855461 10.99416,10.984753 11.554519,10.419467 11.842507,10.042366 12.062078,9.5863882 12.794223,8.0659672 12.793657,6.2652398 12.060578,4.756293 11.680383,3.9737304 10.453587,2.7178427
+						  9.730569,2.3710306 8.6921295,1.8729196 8.3992147,1.807606 7.2037567,1.807606 6.0082984,1.807606 5.7153841,1.87292 4.6769446,2.3710306 3.9539263,2.7178427 2.7271301,3.9737304 2.3469352,4.756293 1.6138384,6.2652398 1.6132726,8.0659672 2.3454252,9.5863882 c 0.4167354,0.8654208 1.5978784,2.0575608
+						  2.4443766,2.4671358 1.0971012,0.530827 2.3890403,0.681561 3.6130134,0.421538 z
+					"/>
+				</svg>
+				</div>
+		<div class="dgwt-wcas-search-icon-arrow"></div>
+		<form class="dgwt-wcas-search-form" role="search" action="https://grill.am/" method="get">
+		<div class="dgwt-wcas-sf-wrapp">
+						<label class="screen-reader-text"
+				   for="dgwt-wcas-search-input-1">Products search</label>
+
+			<input id="dgwt-wcas-search-input-1"
+				   type="search"
+				   class="dgwt-wcas-search-input"
+				   name="s"
+				   value=""
+				   placeholder="Որոնել"
+				   autocomplete="off"
+							/>
+			<div class="dgwt-wcas-preloader"></div>
+
+			<div class="dgwt-wcas-voice-search"></div>
+
+							<button type="submit"
+						aria-label="Поиск"
+						class="dgwt-wcas-search-submit">				<svg class="dgwt-wcas-ico-magnifier" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+					<path  d=" M 16.722523,17.901412 C 16.572585,17.825208 15.36088,16.670476 14.029846,15.33534 L 11.609782,12.907819 11.01926,13.29667 C 8.7613237,14.783493 5.6172703,14.768302 3.332423,13.259528 -0.07366363,11.010358 -1.0146502,6.5989684 1.1898146,3.2148776
+						  1.5505179,2.6611594 2.4056498,1.7447266 2.9644271,1.3130497 3.4423015,0.94387379 4.3921825,0.48568469 5.1732652,0.2475835 5.886299,0.03022609 6.1341883,0 7.2037391,0 8.2732897,0 8.521179,0.03022609 9.234213,0.2475835 c 0.781083,0.23810119 1.730962,0.69629029 2.208837,1.0654662
+						  0.532501,0.4113763 1.39922,1.3400096 1.760153,1.8858877 1.520655,2.2998531 1.599025,5.3023778 0.199549,7.6451086 -0.208076,0.348322 -0.393306,0.668209 -0.411622,0.710863 -0.01831,0.04265 1.065556,1.18264 2.408603,2.533307 1.343046,1.350666 2.486621,2.574792 2.541278,2.720279 0.282475,0.7519
+						  -0.503089,1.456506 -1.218488,1.092917 z M 8.4027892,12.475062 C 9.434946,12.25579 10.131043,11.855461 10.99416,10.984753 11.554519,10.419467 11.842507,10.042366 12.062078,9.5863882 12.794223,8.0659672 12.793657,6.2652398 12.060578,4.756293 11.680383,3.9737304 10.453587,2.7178427
+						  9.730569,2.3710306 8.6921295,1.8729196 8.3992147,1.807606 7.2037567,1.807606 6.0082984,1.807606 5.7153841,1.87292 4.6769446,2.3710306 3.9539263,2.7178427 2.7271301,3.9737304 2.3469352,4.756293 1.6138384,6.2652398 1.6132726,8.0659672 2.3454252,9.5863882 c 0.4167354,0.8654208 1.5978784,2.0575608
+						  2.4443766,2.4671358 1.0971012,0.530827 2.3890403,0.681561 3.6130134,0.421538 z
+					"/>
+				</svg>
+				</button>
+			
+			<input type="hidden" name="post_type" value="product"/>
+			<input type="hidden" name="dgwt_wcas" value="1"/>
+
+			
+					</div>
+	</form>
+</div>
+							
+						</div>
+						<div class="menu-r-item">
+							
+							
+							
+							
+							<span class="js-menu__open" data-menu="#main-nav">
+   <a href="javascript:void(0);"  class="menu-btn">
+							   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								
+								<span class="icon-badge" id="basket-badge">0</span>
+							</a> 
+  </span>
+							<div class="js-menu__context">
+  <div id="main-nav" class="js-menu js-menu--right">
+	<span class="js-menu__close">✕</span>
+   <div  class="mini_cart">
+								<h4 style="text-align:center;margin-bottom:15px;">Ձեր զամբյուղը</h4>
+								
+							<div class="widget_shopping_cart_content">
+
+	<p class="woocommerce-mini-cart__empty-message">Զամբյուղը դատարկ է:</p>
+
+
+<div class="alg-wc-oma-msg">Պատվերը պետք է գերազանցի <span class="woocommerce-Price-amount amount"><bdi>1,900&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span>  շեմը ,Ձեր պատվերի արժեքը կազմել է <span class="woocommerce-Price-amount amount"><bdi>0&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span>.</div></div>	
+							</div>
+  </div>
+</div>
+						</div>
+						<div class="menu-r-item hamburg ">
+							
+						  <div id="myLinks">
+							  <div class="socmob"> <a href="/my-account" class="account" title="View your shopping cart"> 
+				<i class="far fa-user" aria-hidden="true"></i>
+				   </a>     
+									<div class="trp_language_switcher_shortcode">
+<div class="trp-language-switcher trp-language-switcher-container" data-no-translation >
+	<div class="trp-ls-shortcode-current-language">
+		<a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="Armenian" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/hy.png" width="18" height="12" alt="hy" title="Armenian"> Armenian		</a>
+	</div>
+	<div class="trp-ls-shortcode-language">
+				<a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language"  title="Armenian" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/hy.png" width="18" height="12" alt="hy" title="Armenian"> Armenian		</a>
+					<a href="https://grill.am/ru/product-category/xorovac/" title="Russian">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/ru_RU.png" width="18" height="12" alt="ru_RU" title="Russian"> Russian        </a>
+
+			<a href="https://grill.am/en/product-category/xorovac/" title="English">
+			<img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_GB.png" width="18" height="12" alt="en_GB" title="English"> English        </a>
+
+		</div>
+	<script type="application/javascript">
+		// need to have the same with set from JS on both divs. Otherwise it can push stuff around in HTML
+		var trp_ls_shortcodes = document.querySelectorAll('.trp_language_switcher_shortcode .trp-language-switcher');
+		if ( trp_ls_shortcodes.length > 0) {
+			// get the last language switcher added
+			var trp_el = trp_ls_shortcodes[trp_ls_shortcodes.length - 1];
+
+			var trp_shortcode_language_item = trp_el.querySelector( '.trp-ls-shortcode-language' )
+			// set width
+			var trp_ls_shortcode_width                                               = trp_shortcode_language_item.offsetWidth + 16;
+			trp_shortcode_language_item.style.width                                  = trp_ls_shortcode_width + 'px';
+			trp_el.querySelector( '.trp-ls-shortcode-current-language' ).style.width = trp_ls_shortcode_width + 'px';
+
+			// We're putting this on display: none after we have its width.
+			trp_shortcode_language_item.style.display = 'none';
+		}
+	</script>
+</div>
+</div>	</div>
+												   
+	 <div id="mainmenu" class="menu-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-container"><ul id="menu-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-1" class="menu-items"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-24"><a href="https://grill.am/">Գլխավոր</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-103"><a href="https://grill.am/shop/">Մենյու</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-249"><a href="https://grill.am/product-category/%d5%af%d5%b8%d5%b4%d5%a2%d5%b8-%d5%a1%d5%bc%d5%a1%d5%bb%d5%a1%d6%80%d5%af%d5%b6%d5%a5%d6%80-%d5%a1%d5%af%d6%81%d5%ab%d5%a1%d5%b6%d5%a5%d6%80/">Կոմբո առաջարկներ, ակցիաներ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-menu-item menu-item-250"><a href="https://grill.am/product-category/xorovac/" aria-current="page">Խորոված</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-251"><a href="https://grill.am/product-category/qabab/">Քաբաբ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-252"><a href="https://grill.am/product-category/havi_grill/">Հավի գրիլ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-253"><a href="https://grill.am/product-category/shaurma/">Շաուրմա</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-23218"><a href="https://grill.am/product-category/%d5%b6%d5%a1%d5%ad%d5%b8%d6%82%d5%bf%d5%a5%d5%bd%d5%bf-%d5%bd%d5%b8%d5%b8%d6%82%d5%bd/">Նախուտեստ, սոուս</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-35201"><a href="https://grill.am/product-category/%d5%a1%d5%ac%d5%af%d5%b8%d5%b0%d5%b8%d5%ac%d5%a1%d5%b5%d5%ab%d5%b6-%d5%a8%d5%b4%d5%ba%d5%a5%d5%ac%d5%ab%d6%84%d5%b6%d5%a5%d6%80/">Ալկոհոլային ըմպելիքներ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-254"><a href="https://grill.am/product-category/ympeliqner/">Ըմպելիքներ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23219"><a href="https://grill.am/%d5%a1%d5%b2%d6%81%d5%a1%d5%b6%d5%a5%d6%80/">Աղցաներ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-737"><a href="https://grill.am/shop/">Խանութ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://grill.am/about/">Մեր մասին</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11000"><a href="https://grill.am/%d5%a1%d5%b7%d5%ad%d5%a1%d5%bf%d5%a1%d5%b6%d6%84/">Աշխատանք</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://grill.am/contact/">Կապ</a></li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher current-language-menu-item menu-item-40101"><a href="https://grill.am/product-category/xorovac/"><span data-no-translation><img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/hy.png" width="18" height="12" alt="hy" title="Armenian"></span></a></li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-40099"><a href="https://grill.am/en/product-category/xorovac/"><span data-no-translation><img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_GB.png" width="18" height="12" alt="en_GB" title="English"></span></a></li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-40100"><a href="https://grill.am/ru/product-category/xorovac/"><span data-no-translation><img class="trp-flag-image" src="https://grill.am/wp-content/plugins/translatepress-multilingual/assets/images/flags/ru_RU.png" width="18" height="12" alt="ru_RU" title="Russian"></span></a></li>
+</ul></div>	
+									 
+									  
+														
+														  
+  </div>  
+							<a href="javascript:void(0);" class="hamburger" >
+	<i id="myidi" class="fa fa-bars"></i>
+							
+  </a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	 <div class="container">
+		<div class="go_home">
+			<div class="wrapper"><nav class="woocommerce-breadcrumb"><a href="https://grill.am">Գլխավոր</a>&nbsp;&#47;&nbsp;Խորոված</nav></div></div>	
+	
+	</div>		<div data-elementor-type="product-archive" data-elementor-id="117" class="elementor elementor-117 elementor-location-archive product">
+		<div class="elementor-inner">
+			<div class="elementor-section-wrap">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-45376965 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45376965" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2070e7bb" data-id="2070e7bb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-16e8384 elementor-widget elementor-widget-sidebar" data-id="16e8384" data-element_type="widget" data-widget_type="sidebar.default">
+				<div class="elementor-widget-container">
+			<li id="woocommerce_product_categories-2" class="widget woocommerce widget_product_categories"><h4 class="widgettitle">Մենյու</h4><ul class="product-categories"><li class="cat-item cat-item-33"><a href="https://grill.am/product-category/%d5%a1%d5%b2%d6%81%d5%a1%d5%b6/">Աղցան</a> <span class="count">(7)</span></li>
+<li class="cat-item cat-item-21"><a href="https://grill.am/product-category/%d5%af%d5%b8%d5%b4%d5%a2%d5%b8-%d5%a1%d5%bc%d5%a1%d5%bb%d5%a1%d6%80%d5%af%d5%b6%d5%a5%d6%80-%d5%a1%d5%af%d6%81%d5%ab%d5%a1%d5%b6%d5%a5%d6%80/">Կոմբո առաջարկներ, ակցիաներ</a> <span class="count">(17)</span></li>
+<li class="cat-item cat-item-23"><a href="https://grill.am/product-category/havi_grill/">Հավի գրիլ</a> <span class="count">(4)</span></li>
+<li class="cat-item cat-item-19 current-cat"><a href="https://grill.am/product-category/xorovac/">Խորոված</a> <span class="count">(16)</span></li>
+<li class="cat-item cat-item-22"><a href="https://grill.am/product-category/qabab/">Քաբաբ</a> <span class="count">(2)</span></li>
+<li class="cat-item cat-item-24"><a href="https://grill.am/product-category/shaurma/">Շաուրմա</a> <span class="count">(10)</span></li>
+<li class="cat-item cat-item-29"><a href="https://grill.am/product-category/%d5%b6%d5%a1%d5%ad%d5%b8%d6%82%d5%bf%d5%a5%d5%bd%d5%bf-%d5%bd%d5%b8%d5%b8%d6%82%d5%bd/">Նախուտեստ, սոուս</a> <span class="count">(7)</span></li>
+<li class="cat-item cat-item-20"><a href="https://grill.am/product-category/ympeliqner/">Ըմպելիքներ</a> <span class="count">(21)</span></li>
+<li class="cat-item cat-item-28"><a href="https://grill.am/product-category/%d5%a1%d5%ac%d5%af%d5%b8%d5%b0%d5%b8%d5%ac%d5%a1%d5%b5%d5%ab%d5%b6-%d5%a8%d5%b4%d5%ba%d5%a5%d5%ac%d5%ab%d6%84%d5%b6%d5%a5%d6%80/">Ալկոհոլային ըմպելիքներ</a> <span class="count">(9)</span></li>
+</ul></li>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-68a8e65" data-id="68a8e65" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bb27edf elementor-widget elementor-widget-theme-archive-title elementor-page-title elementor-widget-heading" data-id="bb27edf" data-element_type="widget" data-widget_type="theme-archive-title.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Խորոված</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8f197ab elementor-product-loop-item--align-center elementor-products-columns-tablet-3 elementor-products-columns-mobile-2 elementor-products-columns-4 elementor-products-grid elementor-wc-products elementor-show-pagination-border-yes elementor-widget elementor-widget-woocommerce-archive-products" data-id="8f197ab" data-element_type="widget" data-widget_type="woocommerce-archive-products.default">
+				<div class="elementor-widget-container">
+			<div class="woocommerce columns-4 "><div class="woocommerce-notices-wrapper"></div><ul class="products columns-4">
+<li class="product type-product post-29737 status-publish first instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="/product/%d5%a3%d5%a1%d5%bc%d5%a1%d5%b6-%d5%ab%d6%84%d5%ab%d5%a2%d5%ab%d6%80/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="/wp-content/uploads/2024/05/գառան-иքիբիր-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="/wp-content/uploads/2024/05/գառան-иքիբիր-300x300.webp 300w, /wp-content/uploads/2024/05/գառան-иքիբիր-150x150.webp 150w, /wp-content/uploads/2024/05/գառան-иքիբիր-100x100.webp 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Գառան իքիբիր</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,300&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6aeea3e">Քանակ Գառան իքիբիր</label>			<input
+				type="number"
+				id="quantity_68480f6aeea3e"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=29737" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="29737" data-product_sku="" aria-label="Ավելացնել &quot;Գառան իքիբիր&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-13529 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d5%a6%d5%ab-%d5%a9%d5%ab%d5%a1%d5%af-%d5%a9%d5%b8%d5%b6%d6%80%d5%ab/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2022/10/թիակ-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2022/10/թիակ-300x300.jpg 300w, https://grill.am/wp-content/uploads/2022/10/թիակ-150x150.jpg 150w, https://grill.am/wp-content/uploads/2022/10/թիակ-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խոզի Թիակ թոնրի</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>9,500&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6af0b01">Քանակ Խոզի Թիակ թոնրի</label>			<input
+				type="number"
+				id="quantity_68480f6af0b01"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=13529" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="13529" data-product_sku="" aria-label="Ավելացնել &quot;Խոզի Թիակ թոնրի&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-613 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d5%a6%d5%ab-%d5%ab%d6%84%d5%ab%d5%a2%d5%ab%d6%80/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/4.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/4.jpg 300w, https://grill.am/wp-content/uploads/2021/03/4-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/4-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/4-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խոզի իքիբիր</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,100&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6af1bea">Քանակ Խոզի իքիբիր</label>			<input
+				type="number"
+				id="quantity_68480f6af1bea"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=613" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="613" data-product_sku="" aria-label="Ավելացնել &quot;Խոզի իքիբիր&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-489 status-publish last instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d5%a6%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae%d5%9d-%d5%b4%d5%a1%d5%bf/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/1-1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/1-1.jpg 300w, https://grill.am/wp-content/uploads/2021/03/1-1-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/1-1-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/1-1-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խոզի մատ</h2>
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d5%a6%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae%d5%9d-%d5%b4%d5%a1%d5%bf/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="/wp-content/uploads/2021/03/1-1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="/wp-content/uploads/2021/03/1-1.jpg 300w, /wp-content/uploads/2021/03/1-1-150x150.jpg 150w, /wp-content/uploads/2021/03/1-1-100x100.jpg 100w, /wp-content/uploads/2021/03/1-1-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խոզի մատ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>3,300&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6af30ca">Քանակ Խոզի մատ</label>			<input
+				type="number"
+				id="quantity_68480f6af30ca"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=489" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="489" data-product_sku="" aria-label="Ավելացնել &quot;Խոզի մատ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-486 status-publish first instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d5%a6%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae%d5%9d-%d5%b9%d5%a1%d5%ac%d5%a1%d5%b2%d5%a1%d5%bb/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/2.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/2.jpg 300w, https://grill.am/wp-content/uploads/2021/03/2-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/2-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/2-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խոզի չալաղաջ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>3,300&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6af4030">Քանակ Խոզի չալաղաջ</label>			<input
+				type="number"
+				id="quantity_68480f6af4030"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=486" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="486" data-product_sku="" aria-label="Ավելացնել &quot;Խոզի չալաղաջ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-492 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d5%a6%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae%d5%9d-%d6%83%d5%a1%d6%83%d5%b8%d6%82%d5%af/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/12.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/12.jpg 300w, https://grill.am/wp-content/uploads/2021/03/12-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/12-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/12-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խոզի փափուկ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>2,900&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b00ccd">Քանակ Խոզի փափուկ</label>			<input
+				type="number"
+				id="quantity_68480f6b00ccd"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=492" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="492" data-product_sku="" aria-label="Ավելացնել &quot;Խոզի փափուկ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-41102 status-publish instock product_cat-xorovac product_tag-52 product_tag-51 product_tag-50 product_tag-53 has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae-%d5%a2%d5%a1%d5%b6%d5%bb%d5%a1%d6%80%d5%a5%d5%b2%d5%a5%d5%b6/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/06/բանջարեղենի-խորոված-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/06/բանջարեղենի-խորոված-300x300.jpg 300w, https://grill.am/wp-content/uploads/2021/06/բանջարեղենի-խորոված-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/06/բանջարեղենի-խորոված-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">խորոված բանջարեղեն</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,000&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b01d2e">Քանակ խորոված բանջարեղեն</label>			<input
+				type="number"
+				id="quantity_68480f6b01d2e"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=41102" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="41102" data-product_sku="" aria-label="Ավելացնել &quot;խորոված բանջարեղեն&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-31774 status-publish last instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d4%bd%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae-%d5%ac%d5%b8%d5%ac%d5%ab%d5%af/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2024/07/bd3f6d3ef496a19df07d4eab2b198d6e-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" /><h2 class="woocommerce-loop-product__title">Խորոված լոլիկ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>800&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b02bd9">Քանակ Խորոված լոլիկ</label>			<input
+				type="number"
+				id="quantity_68480f6b02bd9"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=31774" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="31774" data-product_sku="" aria-label="Ավելացնել &quot;Խորոված լոլիկ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-498 status-publish first instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae-%d5%af%d5%b8%d6%80%d5%bf%d5%b8%d6%86%d5%ab%d5%ac/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/9.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/9.jpg 300w, https://grill.am/wp-content/uploads/2021/03/9-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/9-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/9-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խորոված կարտոֆիլ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>600&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b03a36">Քանակ Խորոված կարտոֆիլ</label>			<input
+				type="number"
+				id="quantity_68480f6b03a36"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=498" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="498" data-product_sku="" aria-label="Ավելացնել &quot;Խորոված կարտոֆիլ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-8900 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae-%d5%af%d5%ae%d5%b8%d6%82-%d5%ba%d5%b2%d5%ba%d5%a5%d5%b2-1-%d5%b0%d5%a1%d5%bf/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2022/05/խորոված-կծու-պղպեղ-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2022/05/խորոված-կծու-պղպեղ-300x300.jpg 300w, https://grill.am/wp-content/uploads/2022/05/խորոված-կծու-պղպեղ-150x150.jpg 150w, https://grill.am/wp-content/uploads/2022/05/խորոված-կծու-պղպեղ-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խորոված կծու պղպեղ 1 հատ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>150&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b048bf">Քանակ Խորոված կծու պղպեղ 1 հատ</label>			<input
+				type="number"
+				id="quantity_68480f6b048bf"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=8900" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="8900" data-product_sku="" aria-label="Ավելացնել &quot;Խորոված կծու պղպեղ 1 հատ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-3418 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae-%d5%bd%d5%b8%d6%82%d5%b6%d5%af/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/09/14.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/09/14.jpg 300w, https://grill.am/wp-content/uploads/2021/09/14-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/09/14-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/09/14-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Խորոված սունկ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,500&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b0574a">Քանակ Խորոված սունկ</label>			<input
+				type="number"
+				id="quantity_68480f6b0574a"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=3418" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="3418" data-product_sku="" aria-label="Ավելացնել &quot;Խորոված սունկ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-495 status-publish last instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%af%d5%a1%d6%80%d5%bf%d5%b8%d6%86%d5%ab%d5%ac%d5%ab-%d5%ba%d5%ac%d5%a5%d5%b3/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/7.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/7.jpg 300w, https://grill.am/wp-content/uploads/2021/03/7-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/7-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/7-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Կարտոֆիլ պլեճ</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>600&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b0644c">Քանակ Կարտոֆիլ պլեճ</label>			<input
+				type="number"
+				id="quantity_68480f6b0644c"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=495" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="495" data-product_sku="" aria-label="Ավելացնել &quot;Կարտոֆիլ պլեճ&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-34755 status-publish first instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%b0%d5%a1%d5%be%d5%ab-%d5%a2%d5%a4%d5%ab%d5%af%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2024/11/viber_image_2025-03-10_16-58-34-293-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2024/11/viber_image_2025-03-10_16-58-34-293-300x300.jpg 300w, https://grill.am/wp-content/uploads/2024/11/viber_image_2025-03-10_16-58-34-293-150x150.jpg 150w, https://grill.am/wp-content/uploads/2024/11/viber_image_2025-03-10_16-58-34-293-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Հավի բդիկի խորոված</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,500&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b0723e">Քանակ Հավի բդիկի խորոված</label>			<input
+				type="number"
+				id="quantity_68480f6b0723e"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=34755" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="34755" data-product_sku="" aria-label="Ավելացնել &quot;Հավի բդիկի խորոված&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-883 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%b0%d5%a1%d5%be%d5%ab-%d5%a9%d6%87%d5%ab%d5%af%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/04/8.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/04/8.jpg 300w, https://grill.am/wp-content/uploads/2021/04/8-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/04/8-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/04/8-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Հավի թևիկի խորոված</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,050&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b07fd7">Քանակ Հավի թևիկի խորոված</label>			<input
+				type="number"
+				id="quantity_68480f6b07fd7"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=883" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="883" data-product_sku="" aria-label="Ավելացնել &quot;Հավի թևիկի խորոված&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-616 status-publish instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%b0%d5%a1%d5%be%d5%ab-%d5%ab%d6%84%d5%ab%d5%a2%d5%ab%d6%80/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/3-1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/3-1.jpg 300w, https://grill.am/wp-content/uploads/2021/03/3-1-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/3-1-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/3-1-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Հավի իքիբիր</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,000&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b08d0f">Քանակ Հավի իքիբիր</label>			<input
+				type="number"
+				id="quantity_68480f6b08d0f"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=616" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="616" data-product_sku="" aria-label="Ավելացնել &quot;Հավի իքիբիր&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+<li class="product type-product post-647 status-publish last instock product_cat-xorovac has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://grill.am/product/%d5%b0%d5%a1%d5%be%d5%ab-%d5%ad%d5%b8%d6%80%d5%b8%d5%be%d5%a1%d5%ae/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" width="300" height="300" src="https://grill.am/wp-content/uploads/2021/03/6.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://grill.am/wp-content/uploads/2021/03/6.jpg 300w, https://grill.am/wp-content/uploads/2021/03/6-150x150.jpg 150w, https://grill.am/wp-content/uploads/2021/03/6-100x100.jpg 100w, https://grill.am/wp-content/uploads/2021/03/6-64x64.jpg 64w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Հավի Խորոված</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1,200&nbsp;<span class="woocommerce-Price-currencySymbol">֏</span></bdi></span></span>
+</a>	<div class="qib-container">
+		<button type="button" class="minus qib-button" >-</button>
+		<div class="quantity buttons_added">
+			<label class="screen-reader-text" for="quantity_68480f6b09ae3">Քանակ Հավի Խորոված</label>			<input
+				type="number"
+				id="quantity_68480f6b09ae3"				class="input-text qty text"
+				step="1"
+				min="1"
+				max=""
+				name="quantity"
+				value="1"
+				title="Քնկ"
+				size="4"
+				placeholder=""
+				inputmode="numeric" />
+		</div>
+		<button type="button" class="plus qib-button" >+</button>
+	</div>
+	<a  href="?add-to-cart=647" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="647" data-product_sku="" aria-label="Ավելացնել &quot;Հավի Խորոված&quot; ձեր զամբյուղ" rel="nofollow">Ավելացնել</a>	
+	
+</li>
+</ul>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8142188 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8142188" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8075025" data-id="8075025" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1155dcd elementor--h-position-center elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides" data-id="1155dcd" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;,&quot;transition_speed&quot;:500}" data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides">
+					<div class="elementor-repeater-item-c347ef8 swiper-slide"><div class="swiper-slide-bg"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div>				</div>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+		</div>
+		<footer id="footer">
+		<div class="footer-main pt-2s pb-s">
+			<div class="container footer-container">
+				<div class="footer-row">
+					<div>
+													<div class="footer-payments">
+																	<div class="footer-payment"><img src="https://grill.am/wp-content/themes/Grill/images/visa.png" alt=""></div>
+																	<div class="footer-payment"><img src="https://grill.am/wp-content/themes/Grill/images/master.png" alt=""></div>
+																	<div class="footer-payment"><img src="https://grill.am/wp-content/themes/Grill/images/arca.png" alt=""></div>
+														<div class="footer-payment"><img src="https://grill.am/wp-content/themes/Grill/images/telcell.png" alt=""></div>
+														<div class="footer-payment"><img src="https://grill.am/wp-content/themes/Grill/images/logo_idram.png" alt=""></div>
+														
+														
+															</div>
+											</div>
+					<div class="flex-shrink-0">
+						<div class="footer-pages">
+															<div class="footer-page">
+									<a href="https://grill.am">Գլխավոր</a>
+								</div>
+															<div class="footer-page">
+									<a href="/shop">Մենյու</a>
+								</div>
+															<div class="footer-page">
+									<a href="/about">Մեր մասին</a>
+								</div>
+															<div class="footer-page">
+									<a href="/delivery-and-return">Առաքում և վերադարձ</a>
+								</div>
+															
+															<div class="footer-page">
+									<a href="/contact">Կապ</a>
+								</div>
+													</div>
+					</div>
+											<div class="footer-right flex-shrink-0">
+							<div class="footer-socs">
+																	<div class="footer-soc">
+										<a class="footer-soc-link" href="https://www.facebook.com/Grill.am" target="_blank"><img src="https://grill.am/wp-content/themes/Grill/images/facebook.svg" alt=""></a>
+									</div>
+																	<div class="footer-soc">
+										<a class="footer-soc-link" href="https://www.instagram.com/grill.am/" target="_blank"><img src="https://grill.am/wp-content/themes/Grill/images/instagram.svg" alt=""></a>
+									</div>
+															</div>
+						</div>
+									</div>
+		  
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+									<span class="footer-bottom-line">Խորենացի 88, Բաղրամյան 50/5, Պուշկին 43/3,  Անդրանիկ 94/4, Թոթովենց 2/7,Սեբաստիա16/2</span>
+													<span class="footer-bottom-line">Հեռ.`
+													<a href="tel:+37433600700">+374 33 600 700</a>
+													<a href="tel:+37410600700">+374 10 600 700</a>
+				</span><span id="copyfoot" class="footer-bottom-line">Designed and Development by <a href="http://ibg.am" target="_blank">IBG | Innovative Business Group</a></span>
+							</div>
+		</div>
+	</footer>
+<template id="tp-language" data-tp-language="hy"></template><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/Grill\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"\u0533\u056c\u056d\u0561\u057e\u0578\u0580","@id":"https:\/\/grill.am"}},{"@type":"ListItem","position":2,"item":{"name":"\u053d\u0578\u0580\u0578\u057e\u0561\u056e","@id":"https:\/\/grill.am\/product-category\/xorovac\/"}}]}</script>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" id="wapf-frontend-js-js-extra">
+/* <![CDATA[ */
+var wapf_config = {"page_type":"other"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/advanced-product-fields-for-woocommerce/assets/js/frontend.min.js?ver=1.6.7" id="wapf-frontend-js-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.5" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/grill.am\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.5" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/wc-product-table-lite/assets/antiscroll/js.min.js?ver=3.5.1" id="antiscroll-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/wc-product-table-lite/assets/freeze_table_v2/js.min.js?ver=3.5.1" id="freeze_table-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=3.5.1" id="photoswipe-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=3.5.1" id="photoswipe-ui-default-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/wc-product-table-lite/assets/multirange/js.min.js?ver=3.5.1" id="multirange-js"></script>
+<script type="text/javascript" id="wcpt-js-extra">
+/* <![CDATA[ */
+var wcpt_i18n = {"i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination.","lang":""};
+var wcpt_params = {"ajax_url":"https:\/\/grill.am\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","shop_url":"https:\/\/grill.am\/shop\/","shop_table_id":"","site_url":"https:\/\/grill.am","cart_widget_enabled_site_wide":"","cart_widget_exclude_urls":"","cart_widget_include_urls":"","initially_empty_cart":"1","initial_device":"phone","breakpoints":{"tablet":"1199","phone":"849"},"price_decimals":"0","price_decimal_separator":".","price_thousand_separator":",","price_format":"%2$s\u00a0%1$s","currency_symbol":"\u058f","responsive_checkbox_trigger":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/wc-product-table-lite/assets/js.min.js?ver=3.5.1" id="wcpt-js"></script>
+<script type="text/javascript" id="wcpt-js-after">
+/* <![CDATA[ */
+wcpt_params.initially_empty_cart = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/wp-util.min.js?ver=6.8.1" id="wp-util-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u0534\u056b\u057f\u0565\u056c \u0566\u0561\u0574\u0562\u0575\u0578\u0582\u0572\u0568","cart_url":"https:\/\/grill.am\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.0.0" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-variation-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=5.0.0" id="wc-add-to-cart-variation-js"></script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+/* <![CDATA[ */
+var mejsL10n = {"language":"hy","strings":{"mejs.download-file":"\u0546\u0565\u0580\u0562\u0565\u057c\u0576\u0565\u056c \u0586\u0561\u0575\u056c\u0568","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"\u053c\u056b\u0561\u057e\u0561\u0570\u0561\u0576","mejs.play":"\u0546\u057e\u0561\u0563\u0565\u056c","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"\u0544\u056b\u0561\u0581\u0576\u0565\u056c \u0571\u0561\u0575\u0576\u0568","mejs.mute":"\u0531\u0576\u057b\u0561\u057f\u0565\u056c \u0571\u0561\u0575\u0576\u0568","mejs.volume-slider":"Volume Slider","mejs.video-player":"\u054e\u056b\u0564\u0565\u0578 \u0576\u057e\u0561\u0563\u0561\u0580\u056f\u056b\u0579","mejs.audio-player":"\u0531\u0578\u0582\u0564\u056b\u0578 \u0576\u057e\u0561\u0563\u0561\u0580\u056f\u056b\u0579","mejs.captions-subtitles":"\u053d\u0578\u0580\u0561\u0563\u0580\u0565\u0580\/\u0565\u0576\u0569\u0561\u057e\u0565\u0580\u0576\u0561\u0563\u0580\u0565\u0580","mejs.captions-chapters":"Chapters","mejs.none":"\u0549\u056f\u0561","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.8.1" id="mediaelement-migrate-js"></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.8.1" id="wp-mediaelement-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70" id="jquery-blockui-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4" id="js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.0.0" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_cf633df238ba0ffa458523dd16ab858b","fragment_name":"wc_fragments_cf633df238ba0ffa458523dd16ab858b","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.0.0" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" id="crisp-js-before">
+/* <![CDATA[ */
+	window.$crisp=[];
+	if (!window.CRISP_RUNTIME_CONFIG) {
+	  window.CRISP_RUNTIME_CONFIG = {}
+	}
+
+	if (!window.CRISP_RUNTIME_CONFIG.locale) {
+	  window.CRISP_RUNTIME_CONFIG.locale = 'hy'
+	}
+
+	CRISP_WEBSITE_ID = '73fbdb1d-9688-4d93-832a-eb7fdbac4e07';
+/* ]]> */
+</script>
+<script type="text/javascript"  async src="https://client.crisp.chat/l.js?ver=6.8.1" id="crisp-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/themes/Grill/js/main.js?ver=1.0.0" id="script-name-js"></script>
+<script type="text/javascript" id="jquery-dgwt-wcas-js-extra">
+/* <![CDATA[ */
+var dgwt_wcas = {"labels":{"post":"Post","page":"Page","vendor":"Vendor","product_plu":"\u0531\u057a\u0580\u0561\u0576\u0584\u0576\u0565\u0580","post_plu":"Posts","page_plu":"\u0537\u057b\u0565\u0580","vendor_plu":"Vendors","sku_label":"\u053f\u0578\u0564:","sale_badge":"\u0536\u0565\u0572\u0579\u0565\u0580","vendor_sold_by":"Sold by:","featured_badge":"\u0531\u057c\u0561\u057b\u0561\u0580\u056f\u057e\u0578\u0572 \u0561\u057a\u0580\u0561\u0576\u0584","in":"in","read_more":"continue reading","no_results":"\"\\u0548\\u0579 \\u0574\\u056b \\u0561\\u0580\\u0564\\u0575\\u0578\\u0582\\u0576\\u0584\"","no_results_default":"No results","show_more":"\u0534\u056b\u057f\u0565\u056c \u0562\u0578\u056c\u0578\u0580\u0568 ...","show_more_details":"\u0534\u056b\u057f\u0565\u056c \u0562\u0578\u056c\u0578\u0580\u0568 ...","search_placeholder":"\u0548\u0580\u0578\u0576\u0565\u056c","submit":"","search_hist":"Your search history","search_hist_clear":"Clear","tax_product_cat_plu":"\u053f\u0561\u057f\u0565\u0563\u0578\u0580\u056b\u0561\u0576\u0565\u0580","tax_product_cat":"\u053f\u0561\u057f\u0565\u0563\u0578\u0580\u056b\u0561","tax_product_tag_plu":"\u054a\u056b\u057f\u0561\u056f\u0576\u0565\u0580","tax_product_tag":"Tag"},"ajax_search_endpoint":"\/?wc-ajax=dgwt_wcas_ajax_search","ajax_details_endpoint":"\/?wc-ajax=dgwt_wcas_result_details","ajax_prices_endpoint":"\/?wc-ajax=dgwt_wcas_get_prices","action_search":"dgwt_wcas_ajax_search","action_result_details":"dgwt_wcas_result_details","action_get_prices":"dgwt_wcas_get_prices","min_chars":"3","width":"auto","show_details_panel":"","show_images":"1","show_price":"1","show_desc":"1","show_sale_badge":"","show_featured_badge":"","dynamic_prices":"","is_rtl":"","show_preloader":"1","show_headings":"1","preloader_url":"","taxonomy_brands":"","img_url":"https:\/\/grill.am\/wp-content\/plugins\/ajax-search-for-woocommerce\/assets\/img\/","is_premium":"","layout_breakpoint":"990","mobile_overlay_breakpoint":"960","mobile_overlay_wrapper":"body","mobile_overlay_delay":"0","debounce_wait_ms":"400","send_ga_events":"1","enable_ga_site_search_module":"","magnifier_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"\n\t\t\t\t\t xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n\t\t\t\t\t viewBox=\"0 0 51.539 51.361\" xml:space=\"preserve\">\n\t\t             <path \t\t\t\t\t\t d=\"M51.539,49.356L37.247,35.065c3.273-3.74,5.272-8.623,5.272-13.983c0-11.742-9.518-21.26-21.26-21.26 S0,9.339,0,21.082s9.518,21.26,21.26,21.26c5.361,0,10.244-1.999,13.983-5.272l14.292,14.292L51.539,49.356z M2.835,21.082 c0-10.176,8.249-18.425,18.425-18.425s18.425,8.249,18.425,18.425S31.436,39.507,21.26,39.507S2.835,31.258,2.835,21.082z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","magnifier_icon_pirx":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\">\n\t\t\t\t\t<path  d=\" M 16.722523,17.901412 C 16.572585,17.825208 15.36088,16.670476 14.029846,15.33534 L 11.609782,12.907819 11.01926,13.29667 C 8.7613237,14.783493 5.6172703,14.768302 3.332423,13.259528 -0.07366363,11.010358 -1.0146502,6.5989684 1.1898146,3.2148776\n\t\t\t\t\t\t  1.5505179,2.6611594 2.4056498,1.7447266 2.9644271,1.3130497 3.4423015,0.94387379 4.3921825,0.48568469 5.1732652,0.2475835 5.886299,0.03022609 6.1341883,0 7.2037391,0 8.2732897,0 8.521179,0.03022609 9.234213,0.2475835 c 0.781083,0.23810119 1.730962,0.69629029 2.208837,1.0654662\n\t\t\t\t\t\t  0.532501,0.4113763 1.39922,1.3400096 1.760153,1.8858877 1.520655,2.2998531 1.599025,5.3023778 0.199549,7.6451086 -0.208076,0.348322 -0.393306,0.668209 -0.411622,0.710863 -0.01831,0.04265 1.065556,1.18264 2.408603,2.533307 1.343046,1.350666 2.486621,2.574792 2.541278,2.720279 0.282475,0.7519\n\t\t\t\t\t\t  -0.503089,1.456506 -1.218488,1.092917 z M 8.4027892,12.475062 C 9.434946,12.25579 10.131043,11.855461 10.99416,10.984753 11.554519,10.419467 11.842507,10.042366 12.062078,9.5863882 12.794223,8.0659672 12.793657,6.2652398 12.060578,4.756293 11.680383,3.9737304 10.453587,2.7178427\n\t\t\t\t\t\t  9.730569,2.3710306 8.6921295,1.8729196 8.3992147,1.807606 7.2037567,1.807606 6.0082984,1.807606 5.7153841,1.87292 4.6769446,2.3710306 3.9539263,2.7178427 2.7271301,3.9737304 2.3469352,4.756293 1.6138384,6.2652398 1.6132726,8.0659672 2.3454252,9.5863882 c 0.4167354,0.8654208 1.5978784,2.0575608\n\t\t\t\t\t\t  2.4443766,2.4671358 1.0971012,0.530827 2.3890403,0.681561 3.6130134,0.421538 z\n\t\t\t\t\t\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","history_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"18\" height=\"16\">\n\t\t\t\t\t<g transform=\"translate(-17.498822,-36.972165)\">\n\t\t\t\t\t\t<path \t\t\t\t\t\t\td=\"m 26.596964,52.884295 c -0.954693,-0.11124 -2.056421,-0.464654 -2.888623,-0.926617 -0.816472,-0.45323 -1.309173,-0.860824 -1.384955,-1.145723 -0.106631,-0.400877 0.05237,-0.801458 0.401139,-1.010595 0.167198,-0.10026 0.232609,-0.118358 0.427772,-0.118358 0.283376,0 0.386032,0.04186 0.756111,0.308336 1.435559,1.033665 3.156285,1.398904 4.891415,1.038245 2.120335,-0.440728 3.927688,-2.053646 4.610313,-4.114337 0.244166,-0.737081 0.291537,-1.051873 0.293192,-1.948355 0.0013,-0.695797 -0.0093,-0.85228 -0.0806,-1.189552 -0.401426,-1.899416 -1.657702,-3.528366 -3.392535,-4.398932 -2.139097,-1.073431 -4.69701,-0.79194 -6.613131,0.727757 -0.337839,0.267945 -0.920833,0.890857 -1.191956,1.27357 -0.66875,0.944 -1.120577,2.298213 -1.120577,3.35859 v 0.210358 h 0.850434 c 0.82511,0 0.854119,0.0025 0.974178,0.08313 0.163025,0.109516 0.246992,0.333888 0.182877,0.488676 -0.02455,0.05927 -0.62148,0.693577 -1.32651,1.40957 -1.365272,1.3865 -1.427414,1.436994 -1.679504,1.364696 -0.151455,-0.04344 -2.737016,-2.624291 -2.790043,-2.784964 -0.05425,-0.16438 0.02425,-0.373373 0.179483,-0.477834 0.120095,-0.08082 0.148717,-0.08327 0.970779,-0.08327 h 0.847035 l 0.02338,-0.355074 c 0.07924,-1.203664 0.325558,-2.153721 0.819083,-3.159247 1.083047,-2.206642 3.117598,-3.79655 5.501043,-4.298811 0.795412,-0.167616 1.880855,-0.211313 2.672211,-0.107576 3.334659,0.437136 6.147035,3.06081 6.811793,6.354741 0.601713,2.981541 -0.541694,6.025743 -2.967431,7.900475 -1.127277,0.871217 -2.441309,1.407501 -3.893104,1.588856 -0.447309,0.05588 -1.452718,0.06242 -1.883268,0.01225 z m 3.375015,-5.084703 c -0.08608,-0.03206 -2.882291,-1.690237 -3.007703,-1.783586 -0.06187,-0.04605 -0.160194,-0.169835 -0.218507,-0.275078 L 26.639746,45.549577 V 43.70452 41.859464 L 26.749,41.705307 c 0.138408,-0.195294 0.31306,-0.289155 0.538046,-0.289155 0.231638,0 0.438499,0.109551 0.563553,0.298452 l 0.10019,0.151342 0.01053,1.610898 0.01053,1.610898 0.262607,0.154478 c 1.579961,0.929408 2.399444,1.432947 2.462496,1.513106 0.253582,0.322376 0.140877,0.816382 -0.226867,0.994404 -0.148379,0.07183 -0.377546,0.09477 -0.498098,0.04986 z\"\/>\n\t\t\t\t\t<\/g>\n\t\t\t\t<\/svg>\n\t\t\t\t","close_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\" viewBox=\"0 0 24 24\"\n\t\t\t\t\t width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","back_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 16 16\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M14 6.125H3.351l4.891-4.891L7 0 0 7l7 7 1.234-1.234L3.35 7.875H14z\" fill-rule=\"evenodd\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","preloader_icon":"\t\t\t\t<svg class=\"dgwt-wcas-loader-circular \" viewBox=\"25 25 50 50\">\n\t\t\t\t\t<circle class=\"dgwt-wcas-loader-circular-path\" cx=\"50\" cy=\"50\" r=\"20\" fill=\"none\"\n\t\t\t\t\t\t stroke-miterlimit=\"10\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","voice_search_inactive_icon":"\t\t\t\t<svg class=\"dgwt-wcas-voice-search-mic-inactive\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\" width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm0-6Zm-1 13v-3.075q-2.6-.35-4.3-2.325Q5 13.625 5 11h2q0 2.075 1.463 3.537Q9.925 16 12 16t3.538-1.463Q17 13.075 17 11h2q0 2.625-1.7 4.6-1.7 1.975-4.3 2.325V21Zm1-9q.425 0 .713-.288Q13 11.425 13 11V5q0-.425-.287-.713Q12.425 4 12 4t-.712.287Q11 4.575 11 5v6q0 .425.288.712.287.288.712.288Z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","voice_search_active_icon":"\t\t\t\t<svg class=\"dgwt-wcas-voice-search-mic-active\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\"\n\t\t\t\t\t width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm-1 7v-3.075q-2.6-.35-4.3-2.325Q5 13.625 5 11h2q0 2.075 1.463 3.537Q9.925 16 12 16t3.538-1.463Q17 13.075 17 11h2q0 2.625-1.7 4.6-1.7 1.975-4.3 2.325V21Z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","voice_search_disabled_icon":"\t\t\t\t<svg class=\"dgwt-wcas-voice-search-mic-disabled\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\" width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M17.75 14.95 16.3 13.5q.35-.575.525-1.2Q17 11.675 17 11h2q0 1.1-.325 2.087-.325.988-.925 1.863Zm-2.95-3L9 6.15V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 .275-.062.5-.063.225-.138.45ZM11 21v-3.1q-2.6-.35-4.3-2.312Q5 13.625 5 11h2q0 2.075 1.463 3.537Q9.925 16 12 16q.85 0 1.613-.262.762-.263 1.387-.738l1.425 1.425q-.725.575-1.587.962-.863.388-1.838.513V21Zm8.8 1.6L1.4 4.2l1.4-1.4 18.4 18.4Z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","custom_params":{},"convert_html":"1","suggestions_wrapper":"body","show_product_vendor":"","disable_hits":"","disable_submit":"","fixer":{"broken_search_ui":true,"broken_search_ui_ajax":true,"broken_search_ui_hard":false,"broken_search_elementor_popups":true,"broken_search_jet_mobile_menu":true,"broken_search_browsers_back_arrow":true,"force_refresh_checkout":true},"voice_search_enabled":"","voice_search_lang":"hy-AM","show_recently_searched_products":"","show_recently_searched_phrases":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/ajax-search-for-woocommerce/assets/js/search.min.js?ver=1.28.0" id="jquery-dgwt-wcas-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.8" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.8" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=2.9.3" id="elementor-sticky-js"></script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/grill.am\/wp-admin\/admin-ajax.php","nonce":"8d4803470c","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},
+"menu_cart":{"cart_page_url":"https:\/\/grill.am\/cart\/","checkout_page_url":"https:\/\/grill.am\/checkout\/"},"facebook_sdk":{"lang":"hy","app_id":""}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=2.9.3" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="https://grill.am/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},
+"version":"3.21.8","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"landing-pages":true},"urls":{"assets":"https:\/\/grill.am\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"\u053d\u0578\u0580\u0578\u057e\u0561\u056e | Grill.am","excerpt":""}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://grill.am/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.8" id="elementor-frontend-js"></script>
+<!-- WooCommerce JavaScript -->
+<script type="text/javascript">
+jQuery(function($) { 
+		
+		// Make the code work after page load.
+		$(document).ready(function(){			
+			QtyChng();		
+		});
+
+		// Make the code work after executing AJAX.
+		$(document).ajaxComplete(function () {
+			QtyChng();
+		});
+		
+			function QtyChng() {
+				$(document).off("click", ".qib-button").on( "click", ".qib-button", function() {
+		// Find quantity input field corresponding to increment button clicked.
+		var qty = $( this ).siblings( ".quantity" ).find( ".qty" );
+		// Read value and attributes min, max, step.
+		var val = parseFloat(qty.val());
+		var max = parseFloat(qty.attr( "max" ));
+		var min = parseFloat(qty.attr( "min" ));		
+		var step = parseFloat(qty.attr( "step" ));
+		
+		// Change input field value if result is in min and max range.
+		// If the result is above max then change to max and alert user about exceeding max stock.
+		// If the field is empty, fill with min for "-" (0 possible) and step for "+".
+		if ( $( this ).is( ".plus" ) ) {
+			if ( val === max ) return false;				   
+			if( isNaN(val) ) {
+				qty.val( step );			
+			} else if ( val + step > max ) {
+				qty.val( max );
+			} else {
+				qty.val( val + step );
+			}	   
+		} else {			
+			if ( val === min ) return false;
+			if( isNaN(val) ) {
+				qty.val( min );
+			} else if ( val - step < min ) {
+				qty.val( min );
+			} else {
+				qty.val( val - step );
+			}
+		}
+		
+		qty.val( Math.round( qty.val() * 100 ) / 100 );
+		qty.trigger("change");
+		$( "body" ).removeClass( "sf-input-focused" );
+		});
+			}
+			
+
+
+		
+			jQuery(document).on( "click", ".quantity input", function() {
+				return false;
+			});
+			
+			jQuery(document).on( "change input", ".quantity .qty", function() {					
+				
+				var add_to_cart_button = jQuery( this ).closest( ".product" ).find( ".add_to_cart_button" );
+
+				// For AJAX add-to-cart actions				
+				add_to_cart_button.attr( "data-quantity", jQuery( this ).val() );
+
+				// For non-AJAX add-to-cart actions
+				add_to_cart_button.attr( "href", "?add-to-cart=" + add_to_cart_button.attr( "data-product_id" ) + "&quantity=" + jQuery( this ).val() );				
+			});
+			
+		
+ });
+</script>
+			<script>
+				jQuery( document ).ready( function () {
+					var qty_select = jQuery( "select.qty" );
+					if ( qty_select.length > 0 ) {
+						jQuery( document ).on( 'change', 'select.qty:not(.disable_price_by_qty)', function () {
+							var input = jQuery( this ).closest( 'div.quantity' ).find( 'input.qty' );
+							if ( input.length > 0 ) {
+								sync_classes( input );
+								input.val( jQuery( this ).val() ).change();
+							}
+
+							var add_to_cart = jQuery( this ).closest( 'div.quantity' ).siblings( ".add-to-cart" );
+							var add_cart = jQuery( this ).closest( 'div.quantity' ).siblings( ".add_to_cart_button" );
+							if ( add_to_cart.length > 0 ) {
+								add_to_cart.find( 'a.add_to_cart_button' ).attr( "data-quantity", jQuery( this ).val() );
+							} else if ( add_cart.length > 0 ) {
+								add_cart.attr( "data-quantity", jQuery( this ).val() );
+							}
+						} );
+
+						qty_select.change();
+
+					}
+
+				} );
+
+				jQuery( '[name="quantity"]' ).not( ".disable_price_by_qty" ).on( 'change', function ( e ) {
+					var current_val = parseFloat( jQuery( this ).val() );
+					if ( Number.isInteger( current_val ) === false ) {
+						current_val = current_val.toFixed( 4 );
+						current_val = parseFloat( current_val );
+						jQuery( this ).val( current_val );
+					} else {
+						current_val = parseInt( current_val );
+						jQuery( this ).val( current_val );
+					}
+				} );
+
+				function sync_classes( input ) {
+					var classList = input.attr( 'class' ).split( /\s+/ );
+					jQuery( classList ).each( function ( index, item ) {
+						if ( !jQuery( "select.qty" ).hasClass( item ) ) {
+							jQuery( "select.qty" ).addClass( item );
+						}
+					} );
+				}
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+ </body>
+
+
+</html>
+
+<!-- Page cached by LiteSpeed Cache 6.3 on 2025-06-10 13:56:43 -->
